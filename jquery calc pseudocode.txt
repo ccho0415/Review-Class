@@ -1,0 +1,15 @@
+1. Set vars and numbers
+2. on click function set
+  $("#button").click(function() {
+  console.log("Click!");
+}); 
+3. store button clicks into first input function and second input
+  first input ""
+  click.push inputarr;
+5. Associate button clicks with value
+ (This would be done in vars)
+6. execute function
+ (This would be in vars)
+7. clear
+reset function
+  if they start another function

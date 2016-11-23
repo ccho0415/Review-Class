@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <script src="https://code.jquery.com/jquery.js"></script>
+</head>
+<body>
+<button id = "button">Button</button>
+<script type="text/javascript">
+// CRASH COURSE JS
+// ==========================================================
+
+// 1. BASIC VARIABLES
+// ==========================================================
+
+// Create a basic variable 
+
+var basic= "basic";
+
+// 2. ARRAYS
+// ==========================================================
+
+// Create an array of five strings 
+
+var array = ["cat", "dog", "mouse", "horse", "koala"];
+
+
+// Create an array of five numbers
+
+var arraynum = ["1", "2", "3", "4","5"];
+
+
+// 3. FOR LOOPS
+// ==========================================================
+
+// Create a for loop that loops through and prints "My name is Bob five times"
+
+for (var i = 0; i < 5; i ++){
+  console.log("My name is Bob");
+}
+
+// Create a for loop that loops through your five string array
+for (var i = 0; i < arraynum.length; i++){
+  console.log("My name is Bob");
+}
+
+
+
+// 4. FUNCTIONS
+// ==========================================================
+
+// Create a function that takes two numbers and divides the first number by the second. 
+// Then call that function
+
+var divide = function(num1,num2){
+  var result = num1 / num2;
+  console.log(result);
+  return result;
+}
+
+divide(10,2);
+
+// Create a function that takes in an array of numbers and then loops through the array and prints out numbers. 
+// Then call that function
+
+var loop = function (arrayNumbers) {
+  for (var i =0; i < arraynum.length; i++){
+    console.log(arraynum[i]);
+  }
+}
+loop(arraynum);
+
+
+// 5. OBJECTS
+// ==========================================================
+
+// Create a Javascript Object
+
+var object = {
+  name : "Terry",
+  occuption: "engineer",
+  age: 23
+}
+
+
+// Console log any three of the properties in that object
+console.log (object.name);
+console.log (object.occuption);
+console.log (object.age);
+
+
+// Create an Array of 5 Objects 
+
+anotherarray = [
+{
+    name: "Terry",
+    realname: "Terence"
+  },
+  {
+  secondarychar:"rogue",
+  legendary: "insignia"
+},
+{
+  primarychar: "monk",
+  legendary: "some lame thing"
+},
+{ 
+  whathedoes: "top dps",
+  whathealsodoes: "gank horde"
+},
+{ 
+guildfunc1: "guild leader",
+guildfunction2: "only plays dps"
+  }
+  ];
+
+// Console log 3 properties for every one of the five objects
+for (var i = 0; i <anotherarray.length; i++){
+console.log(anotherarray[i].name);
+console.log(anotherarray[i].secondarychar);
+console.log(anotherarray[i].primarychar);
+console.log(anotherarray[i].whathedoes);
+console.log(anotherarray[i].guildfunc1);
+}
+
+// 6. JQUERY EVENTS 
+// ==========================================================
+
+// Create a basic html button then create an onClick event that triggers an on click event.  
+$("#button").click(function() {
+  console.log("Click!");
+}); 
+
+
+
+
+// 7. OVERALL STRUCTURE 
+// ==========================================================
+
+// Talk to student a little about the approach for "getting started" on an application.
+// Talk about the concept of variables, functions, calls.
+</script>
+
+</body>
+</html>
